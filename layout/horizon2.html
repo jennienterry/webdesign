@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>horizon2</title>
+        <link rel="stylesheet" href="css/horizon1.css">
+    </head>
+    <body>
+        <div id="wrap">
+            <header id="header" class="clearfix">
+                <h1 class="logo">로고</h1>
+                <nav class="nav">
+                    <ul class="clearfix">
+                        <li><a href="#">MENU-1</a>
+                            <ul class="submenu">
+                                <li><a href="#">SUBMENU-1</a></li>
+                                <li><a href="#">SUBMENU-2</a></li>
+                                <li><a href="#">SUBMENU-3</a></li>
+                                <li><a href="#">SUBMENU-4</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">MENU-2</a>
+                            <ul class="submenu">
+                                <li><a href="#">SUBMENU-1</a></li>
+                                <li><a href="#">SUBMENU-2</a></li>
+                                <li><a href="#">SUBMENU-3</a></li>
+                                <li><a href="#">SUBMENU-4</a></li>
+                            </ul></li>
+                            <li><a href="#">MENU-3</a>
+                                <ul class="submenu">
+                                    <li><a href="#">SUBMENU-1</a></li>
+                                    <li><a href="#">SUBMENU-2</a></li>
+                                    <li><a href="#">SUBMENU-3</a></li>
+                                </ul></li>
+                                <li><a href="#">MENU-4</a>
+                                    <ul class="submenu">
+                                        <li><a href="#">SUBMENU-1</a></li>
+                                        <li><a href="#">SUBMENU-2</a></li>
+                                        <li><a href="#">SUBMENU-3</a></li>
+                                    </ul></li>
+                                </ul>
+                            </nav>
+                        </header>
+                        <section id="banner">
+                            <h2>이미지 슬라이드</h2>
+                        </section>
+                        <section id="contents" class="clearfix">
+            <div class="cont1"><h3>공지사항</h3></div>
+            <div class="cont2"><h3>갤러리</h3></div>
+            <div calss="cont3"><h3>팝업</h3></div>
+        </section>
+        <footer id="footer" class="clearfix">
+            <div class="foot1"><h3>로고</h3></div>
+            <div class="foot2"><h3>Copyright</h3></div>
+            <div class="foot3"><h3>SNS</h3></div>
+        </footer>
+    </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>
+       $(".nav > ul > li").mouseenter(function(){
+            $(".nav > ul > li > ul").stop().slideDown(200);
+       });
+
+       $(".nav > ul > li").mouseleave(function(){
+            $(".nav > ul > li > ul").stop().slideUp(200);
+       });
+    </script>
+    </body>
+</html>
