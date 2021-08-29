@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>imgslide2</title>
+    <link rel="stylesheet" href="css/imgslide2.css">
+</head>
+<body>
+    <div id="wrap">
+        <header id="header" class="clearfix">
+            <h1 class="logo">로고</h1>
+            <nav class="nav">메뉴</nav>
+        </header>
+    <!-- imgslide 작업 -->
+    <section id="banner">
+        <div class="slideList">
+            <div class="slideImg">
+                <h2>이미지1</h2>
+                <img src="images/b01.jpg" alt="이미지1">
+            </div>
+            <div class="slideImg">
+                <h2>이미지2</h2>
+                <img src="images/b02.jpg" alt="이미지2">
+            </div>
+            <div class="slideImg">
+                <h2>이미지3</h2>
+                <img src="images/b03.jpg" alt="이미지3">
+            </div>
+        </div>
+    </section>
+
+    <section id="contents" class="clearfix">
+        <div class="cont1"><h3>공지사항</h3></div>
+        <div class="cont2"><h3>갤러리</h3></div>
+        <div calss="cont3"><h3>팝업</h3></div>
+    </section>
+    <footer id="footer" class="clearfix">
+        <div class="foot1"><h3>로고</h3></div>
+        <div class="foot2"><h3>Copyright</h3></div>
+        <div class="foot3"><h3>SNS</h3></div>
+    </footer>
+    </div>
+    <script src="//code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script>
+        var slideCount = $(".slideImg").length;
+        var currentIndex = 0;
+        var slidePosition;
+
+        setInterval(function(){
+            if(currentIndex < slideCount - 1){
+                currentIndex++;
+            } else{
+                currentIndex = 0;
+            }
+            slidePosition = currentIndex * (-1200)+"px";
+            console.log(currentIndex);
+            console.log(slidePosition);
+            $(".slideList").animate({left:slidePosition},400);
+        },3000);
+
+//         function slide(){
+//     function slideMove(){
+//       var itemFirst = $('.slideList>img:first-child');
+      
+//       $('.slideList').animate({
+//         marginLeft: -1200 + 'px'
+//       }, 500, function(){
+//         //첫번째 아이템 복사
+//         $('.slideList').append(itemFirst.clone());
+//         //기존 첫번째 아이템 삭제
+//         itemFirst.remove();
+//         //위치 초기화
+//         $('.slideList').css('marginLeft', 0);
+//       })
+//     }
+    
+//     setInterval(function(){
+//         slideMove()
+//     }, 2500);
+//   }
+    </script>
+</body>
+</html>
