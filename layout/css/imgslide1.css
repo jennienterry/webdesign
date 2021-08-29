@@ -25,13 +25,13 @@
 
 #banner{
     width:1200px;
-    height:360px;
     text-align: center;
+    height:360px;
     overflow:hidden;
 }
 
 /* imgslide */
-.sliderList{position: relative; width:1200px; height:360px;}
+.slideList{position: relative; width:1200px; height:360px;}
 .slideList .slideImg{position:relative;}
 .slideList .slideImg h2{position:absolute; left:50%; top:50%; transform:translate(-50%,-50%); color: #fff;}
 .slideList .slideImg img{display:block;}
@@ -41,6 +41,7 @@
     /* width:1200px; */
     /* height:200px; */ /* 자식이 height를 가지므로 안적어도 됨 */
     background: #333;
+    text-align: center;
 }
 
 #contents > div{float:left; width:33.333333%; height:247px; line-height: 247px;} /* 다 동일해서 하나에만 줘도 된다. */
@@ -54,7 +55,7 @@
     background: #222;
 }
 
-#footer > div {float:left; height:100px;}
+#footer > div {float:left; height:100px; text-align: center;}
 #footer > div.foot1{width: 200px; background: #666;}
 #footer > div.foot2{width: 800px; background: #555;}
 #footer > div.foot3{width: 200px; background: #444;}

@@ -31,39 +31,37 @@ li {list-style: none;}
 
 #header .nav{position:relative; float:right; width:100%; margin-top:56px;
              background:#888;}
-
 #header .nav ul{padding-left: 40%;}
 #header .nav ul li{position:relative; float:left; width:25%; text-align: center;}
-#header .nav ul li a{display:block; padding:10px; font-size: 20px; color:#fff;
-                     background: #555;}
+#header .nav ul li a{display:block; padding:10px; font-size: 20px; color:#fff; background: #555;}
 #header .nav ul li a:hover{background-color: rgba(0,0,0,0.4);}                     
 #header .nav ul li ul.submenu{display:none; position:absolute; left:0; top:44px;
                                padding-left: 0; background: #555; height:176px;}
 
-#header .nav ul li:first-child ul.submenu:after{content:''; position:absolute; left:-480px;
-                                   background: #555; top:0; width:480px; height:176px;}
-
+#header .nav ul li:first-child ul.submenu{left:-480px; padding-left: 480px;}
 #header .nav ul li ul.submenu li{width:100%;}
 
 #banner{
     /* width:1200px; */
-    height:300px;
+    height:400px;
+    line-height: 400px;
     background: #666;
+    text-align: center;
 }
 
 #contents{
     /* width:1200px; */
     /* height:200px; */ /* 자식이 height를 가지므로 안적어도 됨 */
     background: #333;
+    text-align: center;
 }
 
-#contents > div{float:left; width:400px; height:200px;} /* 다 동일해서 하나에만 줘도 된다. */
+#contents > div{float:left; width:33.333333%; height:247px; line-height: 247px;} /* 다 동일해서 하나에만 줘도 된다. */
 #contents > div.cont1{background: #555;}
 #contents > div.cont2{background: #444;}
 #contents > div.cont3{background: #333;}
 
 #footer{
-    width:1200px;
     height:100px;
     background: #222;
 }

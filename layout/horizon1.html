@@ -26,20 +26,20 @@
                                 <li><a href="#">SUBMENU-3</a></li>
                                 <li><a href="#">SUBMENU-4</a></li>
                             </ul></li>
-                            <li><a href="#">MENU-3</a>
+                        <li><a href="#">MENU-3</a>
                                 <ul class="submenu">
-                                    <li><a href="#">SUBMENU-1</a></li>
-                                    <li><a href="#">SUBMENU-2</a></li>
-                                    <li><a href="#">SUBMENU-3</a></li>
+                                <li><a href="#">SUBMENU-1</a></li>
+                                <li><a href="#">SUBMENU-2</a></li>
+                                <li><a href="#">SUBMENU-3</a></li>
                                 </ul></li>
-                                <li><a href="#">MENU-4</a>
-                                    <ul class="submenu">
-                                        <li><a href="#">SUBMENU-1</a></li>
-                                        <li><a href="#">SUBMENU-2</a></li>
-                                        <li><a href="#">SUBMENU-3</a></li>
-                                    </ul></li>
-                                </ul>
-                            </nav>
+                        <li><a href="#">MENU-4</a>
+                                <ul class="submenu">
+                                <li><a href="#">SUBMENU-1</a></li>
+                                <li><a href="#">SUBMENU-2</a></li>
+                                <li><a href="#">SUBMENU-3</a></li>
+                            </ul></li>
+                    </ul>
+                </nav>
                         </header>
                         <section id="banner">
                             <h2>이미지 슬라이드</h2>
@@ -59,10 +59,10 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script>
        $(".nav > ul > li").mouseover(function(){
-            $(this).find(".submenu").stop().slideDown(200); //.show도 가능
+            $(this).find(".submenu").stop().show(200); //.show도 가능
         });
         $(".nav > ul > li").mouseout(function(){
-            $(this).find(".submenu").stop().slideUp(200); //.hide
+            $(this).find(".submenu").stop().hide(200); //.hide
         });
     </script>
     </body>
