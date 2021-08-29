@@ -55,31 +55,10 @@
                 currentIndex = 0;
             }
             slidePosition = currentIndex * (-1200)+"px";
-            console.log(currentIndex);
-            console.log(slidePosition);
+            // console.log(currentIndex); //확인용
+            // console.log(slidePosition); //확인용
             $(".slideList").animate({left:slidePosition},400);
         },3000);
-
-//         function slide(){
-//     function slideMove(){
-//       var itemFirst = $('.slideList>img:first-child');
-      
-//       $('.slideList').animate({
-//         marginLeft: -1200 + 'px'
-//       }, 500, function(){
-//         //첫번째 아이템 복사
-//         $('.slideList').append(itemFirst.clone());
-//         //기존 첫번째 아이템 삭제
-//         itemFirst.remove();
-//         //위치 초기화
-//         $('.slideList').css('marginLeft', 0);
-//       })
-//     }
-    
-//     setInterval(function(){
-//         slideMove()
-//     }, 2500);
-//   }
     </script>
 </body>
 </html>
