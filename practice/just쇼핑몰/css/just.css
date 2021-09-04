@@ -1,0 +1,133 @@
+*{
+    padding:0;
+    margin:0;
+    color:#333333;
+    box-sizing: border-box;
+}
+
+li {list-style: none;}
+a {text-decoration-line: none;}
+
+.clearfix::before, .clearfix::after{
+    display:block;
+    content:'';
+    clear:both
+}
+
+body {background-color: #ffffff;}
+#wrap {width:1200px; margin:0 auto;}
+
+#header{
+    text-align: center;
+    position:relative;
+    height:100px;
+    z-index:10;
+}
+
+#header .logo{float:left; width:250px; height:100px; padding-top:30px;}
+#header .nav{float:right; width:600px; margin-top:28px; background-color:#fff;}
+#header .nav li{position:relative; float:left; width: 25%; text-align: center; list-style: none;}
+#header .nav li a{display:block; padding:10px; font-size:20px; color: #333333; text-decoration-line: none;}
+#header .nav li a:hover{background-color: #509255;}
+#header .nav li ul.submenu{display:none; position:absolute; left:0; top:44px; background:#fff;} 
+#header .nav li ul.submenu li{width:100%;}
+#header .nav li ul.submenu li a{font-size: 17px;}
+
+#banner{
+    position:relative;
+    width:1200px;
+    text-align: center;
+    overflow:hidden;
+}
+
+.slideList{position: relative; width:1200px; height:300px;}
+.slideList .slideImg{position:relative;}
+/* .slideList .slideImg h2{position:absolute; left:50%; top:50%; transform:translate(-50%,-50%); color: #fff;} */
+.slideList .slideImg img{display:block;}
+
+#contents {
+    width: 1200px;
+    height: 200px;
+}
+
+#contents > div{float:left; width:400px; height:200px;} /* 다 동일해서 하나에만 줘도 된다. */
+#contents .go{width:400px;}
+
+#tabs {
+    width: 33.333333%;
+    height: 200px;
+    float: left;
+}
+
+/* .tabmenu {
+    width: 80%;
+    height: 30px;
+  } */
+
+.tab-menu li {
+    width: 100px;
+    height: 30px;
+    float: left;
+    cursor: pointer;
+    text-align: center;
+    padding-top: 5px;
+    margin-left: 5px;
+    /* background-color: #509255; */
+}
+
+.tab-menu{padding:10px;}
+  /* .tab-menu ul{overflow:hidden;} */
+  /* .notice, .gallery li{float:left; width:160px; text-align: center; list-style: none;} */
+.tab-menu li.active{text-decoration: underline;}
+  /* .tab-menu li a{padding:10px; color:#fff; display:block; text-decoration-line:none ;} */
+.notice li a:hover{color:#999;}
+  /* .tab-menu .tab-cont{padding:20px; background: #999; text-align: left;} */
+.notice {width: 95%; height: 75%; margin: 5px 10px;}
+.notice li {margin-top: 8px; /* display:none; */}
+.notice span {float: right;}
+
+.gallery {display: none; margin-left: 20px; position: relative;}
+
+.gallery>ul>li {
+    width: 30%;
+    float: left;
+    margin-right:3%;
+    margin-top: 20px;
+    overflow: hidden;
+    /* position: absolute; */
+  }
+
+.gallery img {width: 100%;}
+.banner{width:33.333333%;}
+
+.layer{
+    display:none;
+    width:500px;
+    height:500px;
+    background: #fff;
+    border: 2px solid black;
+    position:absolute;
+    left:50%; top:50%;
+    z-index: 1000;
+    margin-left:-250px;
+    margin-top:-250px;
+}
+
+.layer h2, h4{padding:20px;}
+.layer .close {position:absolute; bottom:20px; right:20px;}
+
+.layer-bg{
+    display:none;
+    width:100%;
+    height:100%;
+    background: rgba(0,0,0,0.6);
+    position:absolute;
+    left:0; top:0;
+    z-index: 500;
+}
+
+#footer {width:100%; height:100px; text-align: center;}
+#footer > div {float:left; height:100px;}
+#footer > div.foot1 {width: 200px; padding-top:30px;}
+#footer > div.foot2 {width: 800px; padding-top:40px;}
+#footer > div.foot3 {width: 200px; padding-top:40px;}

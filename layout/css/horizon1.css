@@ -24,10 +24,10 @@
 }
 
 #header .logo{float:left; width:250px; height:100px; background: #888;}
-#header .nav{float:right; width:600px; margin-top:28px; background:#555;}
+#header .nav{float:right; width:600px; margin-top:28px; background-color:#555;}
 #header .nav li{position:relative; float:left; width: 25%; text-align: center; list-style: none;}
 #header .nav li a{display:block; padding:10px; font-size:20px; color: white; text-decoration-line: none;}
-#header .nav li a:hover{background: rgba(0,0,0,0.4);}
+#header .nav li a:hover{background-color: rgba(0,0,0,0.4);}
 #header .nav li ul.submenu{display:none; position:absolute; left:0; top:44px; background:#555;} 
 #header .nav li ul.submenu li{width:100%;}
 
