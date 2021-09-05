@@ -41,9 +41,7 @@ body {background-color: #ffffff;}
 #header .nav li ul.submenu{display:none; position:absolute; left:0; top:44px; background:#fff;} 
 #header .nav li ul.submenu li{width:100%;}
 #header .nav li ul.submenu li a{font-size: 17px;}
-#header .nav ul li:first-child ul.submenu{left:-600px; padding-left: 600px;}
 #header .nav ul li ul.submenu li{width:100%;}
-#header .nav li ul.submenu .blank{padding-bottom:40px;}
 
 #banner{
     position:relative;
@@ -52,8 +50,8 @@ body {background-color: #ffffff;}
     overflow:hidden;
 }
 
-.slideList{position: relative; width:3600px; height:300px;}
-.slideList .slideImg{position:relative; float:left; width:1200px; height:300px;}
+.slideList{position: relative; width:1200px; height:300px;}
+.slideList .slideImg{position:relative;}
 /* .slideList .slideImg h2{position:absolute; left:50%; top:50%; transform:translate(-50%,-50%); color: #fff;} */
 .slideList .slideImg img{display:block;}
 
@@ -95,6 +93,7 @@ body {background-color: #ffffff;}
   }
 
 .gallery img {width: 100%;}
+.gallery img:hover {opacity:0.8;}
 .banner{width:33.333333%;}
 
 .layer{
@@ -124,38 +123,41 @@ body {background-color: #ffffff;}
 }
 
 #footer {width:1200px; height:100px; text-align: center;}
-/* #footer > div {float:left; height:50px;} */
-#footer div.foot1 {
-  /* float:left; */
-  width:1000px;
-  height:50px;}
-
-  #footer .foot1 ul.f-menu {
-    width:1000px;
-  height:50px; background-color: rgb(149, 182, 145);}
-  
-  #footer .foot1 ul.f-menu li{
-    float:left;
-    padding-top:10px; padding-left:10px;
-    font-size: 14px;
-  }
-  
-#footer div.foot2{
-  height:50px;
-  width:1000px;
-  /* float:left; */
-  padding-top:15px;
+/* #footer > div {float:left;} */
+#footer > div.foot1 {width: 200px; height:100px; padding-top:30px; float:left;}
+#footer > div.foot1 img {width: 100%;}
+#footer > div.foot2 { 
+  width: 800px; height:100px;
+  float:left;
+  padding-top:35px; 
   font-size: 14px;
 }
 
-/* #footer .foot2 img{width:100%;} */
-#footer .feet{
+#footer > div.foot3 {
   float:left;
+  width:200px;
+  text-align: center;
+  background-color: antiquewhite;
 }
 
-#footer .foot3{
+#footer .foot3 ul.f-menu {
   float:right;
-  width:200px;
-  height:100px;
-  padding-top: 35px;
+  width: 200px; height:100px;
+  display:flex;
+  flex-direction: row;
+  align-items:center;
+  justify-content: space-evenly;}
+  
+#footer .foot3 ul.f-menu li{
+  float:left;
+  font-size: 14px;
+  background-color: rgb(149, 182, 145);
+  border-radius: 50%;
+  text-align: center;
+  width:50px;
+  height:50px;
+  font-size: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

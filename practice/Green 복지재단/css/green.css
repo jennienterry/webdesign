@@ -15,20 +15,11 @@ a {text-decoration-line: none;}
 }
 
 body {background-color: #ffffff;}
-.container {width:1200px; margin:0 auto;}
-
-.con{
-  width:100vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: #aaa;
-}
+#wrap {width:1200px; margin:0 auto;}
 
 #header{
     text-align: center;
     position:relative;
-    width:1200px;
     height:100px;
     z-index:10;
 }
@@ -43,7 +34,6 @@ body {background-color: #ffffff;}
 #header .nav li ul.submenu li a{font-size: 17px;}
 #header .nav ul li:first-child ul.submenu{left:-600px; padding-left: 600px;}
 #header .nav ul li ul.submenu li{width:100%;}
-#header .nav li ul.submenu .blank{padding-bottom:40px;}
 
 #banner{
     position:relative;
@@ -53,7 +43,7 @@ body {background-color: #ffffff;}
 }
 
 .slideList{position: relative; width:3600px; height:300px;}
-.slideList .slideImg{position:relative; float:left; width:1200px; height:300px;}
+.slideList .slideImg{position:relative; float:left; width:1200px;height:300px;}
 /* .slideList .slideImg h2{position:absolute; left:50%; top:50%; transform:translate(-50%,-50%); color: #fff;} */
 .slideList .slideImg img{display:block;}
 
@@ -63,7 +53,7 @@ body {background-color: #ffffff;}
 }
 
 #contents > div{float:left; width:400px; height:200px;} /* 다 동일해서 하나에만 줘도 된다. */
-#contents .go{width:400px;}
+
 
 .tab-menu {
     width: 100px;
@@ -123,38 +113,18 @@ body {background-color: #ffffff;}
     z-index: 500;
 }
 
-#footer {width:1200px; height:100px; text-align: center;}
-/* #footer > div {float:left; height:50px;} */
-#footer div.foot1 {
-  /* float:left; */
-  width:1000px;
-  height:50px;}
-
-  #footer .foot1 ul.f-menu {
-    width:1000px;
-  height:50px; background-color: rgb(149, 182, 145);}
-  
-  #footer .foot1 ul.f-menu li{
-    float:left;
-    padding-top:10px; padding-left:10px;
-    font-size: 14px;
-  }
-  
-#footer div.foot2{
-  height:50px;
-  width:1000px;
-  /* float:left; */
-  padding-top:15px;
+#footer {width:100%; height:100px; text-align: center;}
+/* #footer > div {float:left;} */
+#footer > div.foot1 {width: 200px; height:100px; padding-top:30px; float:left;}
+/* #footer > div.foot1 img {width: 100%;} */
+#footer > div.foot2 { 
+  width: 800px; height:100px;
+  float:left;
+  padding-top:35px; 
   font-size: 14px;
 }
-
-/* #footer .foot2 img{width:100%;} */
-#footer .feet{
-  float:left;
-}
-
 #footer .foot3{
-  float:right;
+  float:left;
   width:200px;
   height:100px;
   padding-top: 35px;
