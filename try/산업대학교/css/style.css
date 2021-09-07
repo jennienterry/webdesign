@@ -1,0 +1,71 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+    color:#333333;
+}
+
+body{background-color: #ffffff; color:#333333;}
+a{text-decoration:none;}
+ul, li{list-style:none;}
+img{width:100%;}
+.clearfix::before, .clearfix::after{
+    display:block;
+    content:'';
+    clear:both;
+}
+
+.layer-bg{
+    display:none;
+    background-color:rgba(0,0,0,0.6);
+    width:100%; height:100%;
+    position: absolute;
+}
+
+.layer{
+    display:none;
+    position: absolute;
+    left:500px; top:500px;
+    width:500px; height:500px;
+    background-color: #ffffff;
+
+}
+.layer h2,h4{padding:20px;}
+.layer .close{
+    position: absolute;
+    bottom: 20px; right:20px;
+}
+
+#wrap{width:1200px; margin:0 auto;}
+
+#header{position:relative;width:1200px; height:100px; z-index:10;}
+#header .toplogo{width:250px;height:100px;padding-top: 30px; float:left;}
+
+#header .menu{width:600px; height:100px; float:right;}
+#header .menu li{position:relative; float:left; font-size:20px; background-color: #ffffff;}
+#header .menu li a{padding:10px;}
+#header .menu li a:hover{background-color: rgba(143, 188, 143, 0.479);}
+#header .menu li ul.submenu{display:block; width:25%;}
+#header .menu li ul.submenu li{width:100%;}
+#header .menu li ul.submenu li a{font-size:17px;}
+
+
+#contents .notice{width:400px; height:200px; float:left;}
+#contents .notice h3{padding-left: 20px; padding-top: 10px;}
+#contents .notice ul{width:400px; height:200px; float:left;}
+#contents .gallery{width:400px; height:200px; float:right;}
+#contents .gallery h3{padding-left: 20px; padding-top: 10px;}
+#contents .gallery li{
+    width:400px; height:200px;
+    float:left;
+    display: flex;
+    align-items: center;
+    justify-content: center;}
+#contents .banner{width:400px; height:200px; float:right;}
+
+#footer{width:1200px; height:100px;text-align: center;}
+#footer .feet{width:950px; height:100px;}
+#footer .feet .footmenu{width:950px; height:50px; padding-left:300px;padding-top:15px;}
+#footer .feet .footmenu li{float:left; padding-left: 30px;}
+#footer .feet .footmenu .copyright{width:950px; height:50px; float:left; padding-top:15px;}
+#footer .family{width:250px; height:100px;float:right;}

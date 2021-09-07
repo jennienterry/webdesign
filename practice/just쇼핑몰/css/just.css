@@ -14,7 +14,7 @@ a {text-decoration-line: none;}
     clear:both
 }
 
-body {background-color: #ffffff;}
+body {background-color: #ffffff; color:#333333;}
 #wrap {width:1200px; margin:0 auto;}
 
 #header{
