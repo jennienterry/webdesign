@@ -8,20 +8,16 @@ $(".nav ul li").hover(
 
 //이미지 슬라이드
 var slideCount = $(".slideImg").length;
-        var currentIndex = 0;
-        var slidePosition;
-
-        setInterval(function(){
-            if(currentIndex < slideCount - 1){
-                currentIndex++;
-            } else{
-                currentIndex = 0;
-            }
-            slidePosition = currentIndex * (-800)+"px";
-            // console.log(currentIndex); //확인용
-            // console.log(slidePosition); //확인용
-            $(".slideList").animate({left:slidePosition},400);
-        },3000);
+var currentIndex = 0;
+setInterval(function(){
+    if(currentIndex < slideCount-1){
+        currentIndex++;
+    }else{
+        currentIndex = 0;
+    }
+    var slidePosition = currentIndex * (-800)+"px";
+    $(".slideList").animate({left:slidePosition},400);
+}, 3000);
 
 //레이어 팝업
 $(".layerPopup").click(function(){
@@ -35,3 +31,19 @@ $(".layerPopup").click(function(){
        $(".layer").hide();
        $(".layer-bg").hide();
    });
+
+//    var slideCount = $(".slideImg").length;
+//         var currentIndex = 0;
+//         var slidePosition;
+
+//         setInterval(function(){
+//             if(currentIndex < slideCount - 1){
+//                 currentIndex++;
+//             } else{
+//                 currentIndex = 0;
+//             }
+//             slidePosition = currentIndex * (-800)+"px";
+//             // console.log(currentIndex); //확인용
+//             // console.log(slidePosition); //확인용
+//             $(".slideList").animate({left:slidePosition},400);
+//         },3000);
